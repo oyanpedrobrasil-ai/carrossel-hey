@@ -18,7 +18,7 @@ Na dúvida, é a primeira. O Claude escolhe sozinho pelo seu pedido.
 - **Claude Code** (plano Pro ou Max do Claude): no app desktop do Claude (aba Code) ou no terminal.
 - **Google Chrome** instalado.
 - **Python 3** (o Mac já tem; no Windows, instale em [python.org](https://www.python.org/downloads/) marcando "Add to PATH").
-- **Conta no GitHub** com acesso a este repositório. Me manda o seu usuário que eu te convido.
+- **Modelo:** pra montar os slides, use o modelo mais forte que o seu plano tiver (o Opus, se tiver). É trabalho visual fino: conferir posição, margem e acento slide a slide.
 
 Opcionais (o Claude pede só quando precisar):
 - **Apify** pra baixar o post pelo link. Sem ela, você manda os prints dos slides. Custa centavos por post, e o plano grátis da Apify cobre centenas por mês: [apify.com](https://apify.com).
@@ -27,19 +27,9 @@ Opcionais (o Claude pede só quando precisar):
 
 ## Instalação (uma vez só)
 
-**1. Aceite o convite do GitHub** que chegou no seu e-mail.
+Não precisa de conta no GitHub.
 
-**2. Deixe o seu computador logado no GitHub.** O jeito mais fácil é o GitHub CLI. Instale em [cli.github.com](https://cli.github.com) e rode no terminal:
-
-```bash
-gh auth login
-```
-
-```bash
-gh auth setup-git
-```
-
-**3. Instale o plugin.** Dentro do Claude Code no terminal, digite um comando de cada vez:
+**1. Instale o plugin.** Dentro do Claude Code no terminal, digite um comando de cada vez:
 
 ```
 /plugin marketplace add oyanpedrobrasil-ai/carrossel-hey
@@ -58,7 +48,7 @@ claude plugin install carrossel-hey@hey-investidor
 
 Usa só o app desktop e não tem o comando `claude` no terminal? Instale o Claude Code de terminal ([guia oficial](https://code.claude.com/docs/en/setup)), rode os dois comandos acima e pronto: o plugin aparece também na aba Code do app.
 
-**4. Feche e abra o Claude Code** pra ele carregar o plugin.
+**2. Feche e abra o Claude Code** pra ele carregar o plugin.
 
 ## Como usar
 
@@ -108,7 +98,7 @@ claude plugin update carrossel-hey@hey-investidor
 
 ## Deu problema?
 
-- **"Repository not found" ou erro de autenticação ao instalar:** o convite do GitHub não foi aceito ou o computador não está logado. Refaça os passos 1 e 2.
+- **Erro ao adicionar o marketplace:** confira se digitou `oyanpedrobrasil-ai/carrossel-hey` certinho e se o computador tem o `git` (no Mac, o terminal oferece instalar na primeira vez; no Windows, [git-scm.com](https://git-scm.com)).
 - **"Não achei o Google Chrome":** instale o Chrome e peça de novo.
 - **Falta biblioteca do Python:** o Claude instala sozinho. Se ele não conseguir: `pip3 install httpx python-dotenv pillow numpy opencv-python-headless`.
 - **O texto saiu com cara de tradução:** mande pro Claude 2 ou 3 legendas suas e peça pra ele atualizar o seu `tom-de-voz.md`.
