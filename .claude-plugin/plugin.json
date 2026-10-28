@@ -1,0 +1,11 @@
+{
+  "name": "carrossel-hey",
+  "version": "1.0.0",
+  "description": "Recria carrosséis virais do Instagram com a sua marca: baixa a referência, adapta o texto no seu tom de voz e monta os slides prontos pra postar (pelo Chrome, de graça, ou no Paper).",
+  "author": {
+    "name": "Yan Pedro (Hey Investidor)",
+    "url": "https://www.instagram.com/heyinvestidor/"
+  },
+  "homepage": "https://www.instagram.com/heyinvestidor/",
+  "keywords": ["instagram", "carrossel", "conteudo", "social-media"]
+}
